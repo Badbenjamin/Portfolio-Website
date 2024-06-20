@@ -16,11 +16,20 @@ div.append(ul);
 
 const mainTitle = document.getElementById("Main-Title");
 
-// mainTitle.style.color = "black";
+mainTitle.style.color = "black";
 
 mainTitle.addEventListener("click", function (event) {
-    console.log(event);
-    if (event.isTrusted === true) {
+    console.log(mainTitle.style.color)
+    if (mainTitle.style.color === "white") {
         mainTitle.style.color = "black";
+    } else {
+        mainTitle.style.color = "white";
     }
 });
+
+// mainTitle.addEventListener("click", function (event) {
+//     console.log(event);
+//     if (event.altKey === true) {
+//         mainTitle.style.color = "white";
+//     }
+// });
