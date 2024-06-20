@@ -16,8 +16,7 @@ div.append(ul);
 
 const mainTitle = document.getElementById("Main-Title");
 
-// mainTitle.style.color = "black";
-
+// title black/white click event 
 mainTitle.addEventListener("click", function (event) {
     console.log(mainTitle.style.color)
     if (mainTitle.style.color === "white") {
@@ -27,9 +26,13 @@ mainTitle.addEventListener("click", function (event) {
     }
 });
 
-// mainTitle.addEventListener("click", function (event) {
-//     console.log(event);
-//     if (event.altKey === true) {
-//         mainTitle.style.color = "white";
-//     }
-// });
+const bioPic = document.getElementById("Main-Pic");
+
+bioPic.addEventListener("mouseover", function (event) {
+    console.log(event)
+    bioPic.style.width = "400px";
+    setTimeout(() => {
+        bioPic.style.width = "";
+      }, 500);
+})
+
