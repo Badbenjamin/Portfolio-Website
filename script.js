@@ -16,7 +16,7 @@ div.append(ul);
 
 const mainTitle = document.getElementById("Main-Title");
 
-mainTitle.style.color = "black";
+// mainTitle.style.color = "black";
 
 mainTitle.addEventListener("click", function (event) {
     console.log(mainTitle.style.color)
