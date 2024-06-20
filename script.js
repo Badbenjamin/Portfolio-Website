@@ -14,3 +14,13 @@ for (let i = 0; i < 3; i++) {
 
 div.append(ul);
 
+const mainTitle = document.getElementById("Main-Title");
+
+// mainTitle.style.color = "black";
+
+mainTitle.addEventListener("click", function (event) {
+    console.log(event);
+    if (event.isTrusted === true) {
+        mainTitle.style.color = "black";
+    }
+});
