@@ -30,9 +30,11 @@ const bioPic = document.getElementById("Main-Pic");
 
 bioPic.addEventListener("mouseover", function (event) {
     console.log(event)
-    bioPic.style.width = "400px";
-    setTimeout(() => {
-        bioPic.style.width = "";
-      }, 500);
+    bioPic.style.width = "500px";
 })
+
+bioPic.addEventListener("mouseout", function (event) {
+    console.log(event)
+    bioPic.style.width = "";
+});
 
