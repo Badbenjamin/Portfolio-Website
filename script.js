@@ -1,10 +1,22 @@
 // bio list creator
 const bioButton = document.getElementById("bioClick");
-// const list = document.getElementById("bioList");
+const list = document.getElementById("bioList");
 
 bioButton.addEventListener("click", function(event){ 
-    bioButton.textContent = "About Me...";
-    bioButton.style.color = "white";
+        if (bioButton.textContent === "Click for Bio") {
+        bioButton.textContent = "About Me...";
+        bioButton.style.color = "white";
+
+        const liOne = document.createElement("li");
+        liOne.textContent = "I live in Brooklyn";
+        list.append(liOne);
+        
+       
+
+    } else {
+        bioButton.textContent = "Click for Bio";
+        bioButton.style.color = "black";
+    }
 });
 
 const mainTitle = document.getElementById("Main-Title");
