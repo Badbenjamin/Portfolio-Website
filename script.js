@@ -9,13 +9,20 @@ bioButton.addEventListener("click", function(event){
 
         const liOne = document.createElement("li");
         liOne.textContent = "I live in Brooklyn";
+        liOne.id = 'one';
         list.append(liOne);
-        
-       
 
+        const liTwo = document.createElement("li");
+        liTwo.textContent = "I'm learning Software Engineering";
+        liTwo.id = 'two';
+        list.append(liTwo);
     } else {
         bioButton.textContent = "Click for Bio";
         bioButton.style.color = "black";
+        const removeOne = document.getElementById("one");
+        removeOne.remove();
+        const removeTwo = document.getElementById("two");
+        removeTwo.remove();
     }
 });
 
